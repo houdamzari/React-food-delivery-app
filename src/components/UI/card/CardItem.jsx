@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroup, ListGroupItem } from "reactstrap";
+import { ListGroupItem } from "reactstrap";
 import "../../../styles/cart-item.css";
 import { useDispatch } from "react-redux";
 import { cardActions } from "../../../store/cardSlice";
