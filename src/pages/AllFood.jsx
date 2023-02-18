@@ -38,6 +38,7 @@ const AllFood = () => {
               <div className="search__widget d-flex align-items-center justify-content-between">
                 <input
                   type="text"
+                  style={{ width: "100%", backgroundColor: "transparent" }}
                   placeholder=" I'm looking for ..."
                   value={searchTerm}
                   onChange={(e) => setSearchTern(e.target.value)}

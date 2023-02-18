@@ -17,10 +17,6 @@ const nav__links = [
   },
 
   {
-    display: "Card",
-    path: "/card",
-  },
-  {
     display: "Contact",
     path: "/contact",
   },
@@ -81,11 +77,7 @@ const Header = () => {
                 <span className="cart__badge text-black">{totalQuantity}</span>
               </i>
             </span>
-            <span className="user">
-              <Link to="/login">
-                <i className="ri-user-line"></i>
-              </Link>
-            </span>
+
             <span className="mobile__menu" onClick={toggleMenu}>
               <i className="ri-menu-line"></i>
             </span>

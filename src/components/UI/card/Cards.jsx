@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import "../../../styles/shopping-cart.css";
 import { useDispatch, useSelector } from "react-redux";
 import { cardUiActions } from "../../../store/cardUiSlice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Cards = () => {
   const dispatch = useDispatch();
-
+  const notify = () => toast.info("DEMO ENDED !");
   const toggleCard = () => {
     dispatch(cardUiActions.toggleCard());
   };
@@ -35,9 +37,20 @@ const Cards = () => {
           <h6>
             Subtotal amount: <span>${totalAmount}</span>
           </h6>
-          <button>
-            <Link to="./checkout">Checkout</Link>
-          </button>
+
+          <button onClick={notify}>Checkout !</button>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         </div>
       </ListGroup>
     </div>
