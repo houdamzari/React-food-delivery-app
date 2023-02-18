@@ -5,7 +5,6 @@ import { Home, AllFood, FoodDetails, Checkout, Contact } from "../pages";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/checkout" element={<StripeContainer />} />
