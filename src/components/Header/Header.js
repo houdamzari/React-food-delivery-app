@@ -9,7 +9,7 @@ import { cardUiActions } from "../../store/cardUiSlice";
 const nav__links = [
   {
     display: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     display: "All-Food",
