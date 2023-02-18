@@ -15,11 +15,6 @@ const nav__links = [
     display: "All-Food",
     path: "/allFood",
   },
-
-  {
-    display: "Contact",
-    path: "/contact",
-  },
 ];
 const Header = () => {
   const menuRef = useRef(null);
